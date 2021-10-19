@@ -9,7 +9,7 @@ Added the ability for the pool to concurrently sort an array
   - Add concurrent map function
   - Add concurrent filter function
 
-#Licence file
+### Licence file
 Copyright John Schember <john@nachtimwald.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
