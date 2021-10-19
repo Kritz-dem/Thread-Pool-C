@@ -377,24 +377,15 @@ static void sort_wrapper_func(void* arg) {
 
 }
 
-// static void tester1(void* ffs,size_t t) {
-//     int* arr = (int*) ffs;
-//    for(int i = 0; i < t; i++){
-//         printf("%d  ", arr[i]);
-//     }
-//     printf("\n");
-// }
-
 static void merge_wrapper_func(void* arg) {
     merge_wrapper* s_arg = (merge_wrapper*) arg;
-    // printf("%zu %zu %zu\n",s_arg->low,s_arg->mid,s_arg->high);
     merge(s_arg->arr,s_arg->size,s_arg->low,s_arg->mid,s_arg->high,s_arg->compare);
 }
 
 //Pararell Sort Using Merge
 void tpool_sort(tpool_t* pool, void* arr, size_t n,size_t size,comparator compare){
 
-    if(n <= 5) {
+    if(n <= 8192) {
         dp_quick_sort(arr,size,n,compare );
     } else {
         pool_wrapper* wrap = (pool_wrapper*) malloc(sizeof(pool_wrapper));
