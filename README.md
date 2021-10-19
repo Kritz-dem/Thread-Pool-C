@@ -5,7 +5,7 @@ More detailed explanation of the algorithm can be found here: https://nachtimwal
 
 Added the ability for the pool to concurrently sort an array
 
-#TODO:
+### TODO:
   - Add concurrent map function
   - Add concurrent filter function
 
