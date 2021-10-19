@@ -4,6 +4,10 @@ The core of design of the Thread Pool came from: John Schember
 More detailed explanation of the algorithm can be found here: https://nachtimwald.com/files/2008/11/MIT.txt
 
 Added the ability for the pool to concurrently sort an array
+## How the pool sorts an array
+It is based on the java implementation, if the size of the array exceeds 8192, the algorithm will run on a single thread
+a double pivot quicksort or else it will split the array into chunks, sort the chunks concurrently and then merge them into a
+single array
 
 ### TODO:
   - Add concurrent map function
