@@ -1,6 +1,6 @@
 # Thread-Pool-C
 
-# The core of design of the Thread Pool came from: John Schember
+The core of design of the Thread Pool came from: John Schember
 More detailed explanation of the algorithm can be found here: https://nachtimwald.com/files/2008/11/MIT.txt
 
 Added the ability for the pool to concurrently sort an array
